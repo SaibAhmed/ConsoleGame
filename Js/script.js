@@ -12,6 +12,15 @@ Questions.prototype.displayQuestions =
         console.log(i+" : "+this.answers[i]);
     }
 }
+
+Questions.prototype.checkAnswer =
+    function(ans){
+    if(ans==this.correct){
+        console.log("correct answer");
+    }else{
+        console.log("Wrong answer");
+    }
+}
 var q1 = new Questions("Is JavaScript the coolest programming language in the world?" ,
                       ["yes","no"], 0);
 
@@ -24,3 +33,6 @@ var q3 = new Questions("what does the best describe coding?" ,
 var questions = [q1,q2,q3];
 var n = Math.floor(Math.random() * questions.length);
 questions[n].displayQuestions();
+
+var answer = parseInt(prompt("please select the correct answer."));
+questions[n].checkAnswer(answer);

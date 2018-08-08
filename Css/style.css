@@ -5,3 +5,9 @@ h1{
     background-color: mistyrose;
     padding: 10px;
 }
+h2{
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
